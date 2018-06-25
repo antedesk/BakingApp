@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin_10dp"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="@color/heavenly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:textColor="@color/isabelline"
+            android:text="@string/appwidget_text"
+            android:textSize="@dimen/tv_size"
+            android:gravity="center"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/ingredient_lv_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/isabelline"
+        android:divider="@color/mango_tango"
+        android:dividerHeight="1px"/>
+</LinearLayout>

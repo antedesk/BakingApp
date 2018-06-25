@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/heavenly</item>
+        <item name="colorPrimaryDark">@color/mango_tango</item>
+        <item name="colorAccent">@color/tenne</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BaseTextView" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/smoky_black</item>
+        <item name="android:layout_margin">@dimen/default_layout_margin_tv</item>
+        <item name="android:textSize">@dimen/tv_size</item>
+    </style>
+    <style name="TitleTextView" parent="@style/BaseTextView">
+        <item name="android:textColor">@color/tenne</item>
+        <item name="android:textSize">@dimen/title_tv_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="fontPath">fonts/attack_of_the_cucumbers.ttf</item>
+    </style>
+</resources>

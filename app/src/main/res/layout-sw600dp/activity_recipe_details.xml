@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/light_gray"
+    tools:context="it.antedesk.bakingapp.RecipeDetailsActivity">
+
+    <FrameLayout
+        android:id="@+id/steps_list_container"
+        android:layout_width="@dimen/step_list_container"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/steps_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

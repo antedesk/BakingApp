@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.antedesk.bakingapp.fragment.StepFragment"
+    tools:listitem="@layout/fragment_step_item"
+    android:name="it.antedesk.bakingapp.fragment.StepFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_ingredients"
+        style="@style/BaseTextView"
+        android:layout_width="match_parent"
+        android:text="@string/show_ingredients"
+        android:textAlignment="center"
+        android:padding="@dimen/layout_margin_10dp"
+        android:layout_margin="@dimen/layout_margin_10dp"
+        android:background="@drawable/item_background"
+        android:onClick="showIngredients"
+        tools:ignore="OnClick"
+        android:stateListAnimator="@animator/lift_on_touch" />
+
+    <View
+        android:id="@+id/separator1_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_separator_height"
+        android:background="@color/heavenly"
+        android:layout_margin="@dimen/layout_margin_10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        app:layoutManager="LinearLayoutManager"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"/>
+</LinearLayout>

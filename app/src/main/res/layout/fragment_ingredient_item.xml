@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_margin_10dp"
+    android:background="@drawable/item_background">
+    <TextView
+        android:id="@+id/ingredient_descp"
+        style="@style/BaseTextView"
+        android:layout_margin="@dimen/margin_5dp"
+        android:textColor="@color/tenne"/>
+    <TextView
+        android:id="@+id/quatity_placeholder"
+        style="@style/BaseTextView"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_below="@+id/ingredient_descp"
+        android:text="@string/quantity"/>
+    <TextView
+        android:id="@+id/ingredient_quantity"
+        style="@style/BaseTextView"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_below="@+id/ingredient_descp"
+        android:layout_toRightOf="@+id/quatity_placeholder"
+        android:layout_toEndOf="@+id/quatity_placeholder"/>
+    <TextView
+        android:id="@+id/ingredient_measure"
+        style="@style/BaseTextView"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_below="@+id/ingredient_descp"
+        android:layout_toRightOf="@+id/ingredient_quantity"
+        android:layout_toEndOf="@+id/ingredient_quantity" />
+</RelativeLayout>
